@@ -51,17 +51,31 @@ The following packages need to be installed on your **GNU/Linux** machine in ord
 
 It's also handy to have other software available such as **adb**, **apktool** and **java** installed.
 
+###### Java Ubuntu/Debian
+
+Add the PPA for OpenJDK:
+
+    sudo add-apt-repository ppa:openjdk-r/ppa
+
+Then, install the appropriate version of Java. If you want you can change 8 with another JDK version.
+
+    sudo apt-get update && sudo apt-get install openjdk-8-jdk
+
+###### ADB Ubuntu/Debian
+
+    sudo apt-get install android-tools-adb
+
 #### Building
 
 First of all, make sure you have the needed [dependencies](#dependencies).
 
 Then, clone the repository somewhere, _--recursive_ flag will pull the needed modules.
 
-	git clone --recursive https://github.com/GalaticStryder/LibertineOS.git libertine-os
+	git clone --recursive https://github.com/GalaticStryder/LibertineOS.git LibertineOS
 
-Change directory to the folder _libertine-os_ folder.
+Change directory to the folder _LibertineOS_ folder.
 
-	cd libertine-os
+	cd LibertineOS
 
 Run the _[liberty.sh](liberty.sh)_ script in build mode, indicated by _-b_ flag with the **configuration file** right after.
 
